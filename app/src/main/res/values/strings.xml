@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Relative Siair</string>
+    <string-array name="arr_name">
+        <item>Xinnn</item>
+        <item>Rekt</item>
+        <item>Alberttt</item>
+    </string-array>
 </resources>

@@ -1,18 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="6dp"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tv_siair"
+        android:layout_width="wrap_content"
+        android:layout_height="" th="wrap_content"
+        android:text="SIAIR"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"/>
+
+    <Spinner
+        android:id="@+id/sp_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/arr_name"
+        android:layout_toLeftOf="@id/tv_siair" />
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/pessawt"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/tv_nomor_penerbangan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="SI 7973"
+        android:layout_above="@+id/iv_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="6dp"/>
+    <TextView
+        android:id="@+id/tv_rute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
